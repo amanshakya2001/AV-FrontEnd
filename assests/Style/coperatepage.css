@@ -1,7 +1,3 @@
-.lh-auto
-{
-    line-height: inherit !important;
-}
 .nav-link:hover{
     border-bottom: 3px solid #ee3d24;
     color: blue !important;
@@ -19,4 +15,7 @@
 }
 .border-bottom-orange{
     border-bottom: 3px solid #ee3d24;
+}
+.list-style-none{
+    list-style: none;
 }
