@@ -1,0 +1,22 @@
+.lh-auto
+{
+    line-height: inherit !important;
+}
+.nav-link:hover{
+    border-bottom: 3px solid #ee3d24;
+    color: blue !important;
+}
+.common-style{
+    padding: 40px 0px;
+}
+.welcome{
+    background: url(../images/fill_1.png) no-repeat;
+    background-position: cover;
+
+}
+.bg-orange{
+    background-color: #ee3d24 !important;
+}
+.border-bottom-orange{
+    border-bottom: 3px solid #ee3d24;
+}
