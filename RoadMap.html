@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            width: 100%;
+        }
+        .container .row .roadmap{
+            width: fit-content;
+            margin: auto;
+        }
+        .container .row .roadmap ul{
+            border-left: 2px solid white;
+            list-style: none;
+            padding-left: 0;
+        }
+        .container .row .roadmap ul li {
+            margin-bottom: 100px;
+            display: flex;
+        }
+        .container .row .roadmap ul li .icon-box{
+            background-color: white;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            padding: 5px;
+            box-sizing: border-box;
+            border-radius:0px 10px 10px 0px;
+        }
+        .container .row .roadmap ul li .icon-box img{
+            width: 40px;
+            height: 40px;
+        }
+        .container .row .roadmap ul li .icon-box::after{
+            content: "";
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top:  8px solid #ffffff;
+            position: absolute;
+            right: -11px;
+            top: 18px;
+            transform: rotate(-90deg);
+            z-index: 999;
+        
+        }
+        .container .row .roadmap ul li span{
+            color: white;
+            margin-left: 10px;
+            line-height: 50px;
+        }
+    </style>
+    <title>RoadMap</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="roadmap">
+                <ul>
+                    <li>
+                        <div class="icon-box">
+                            <img src="./assests/images/python.svg" alt="">
+                        </div>
+                        <span>First Element</span>
+                    </li>
+                    <li>
+                        <div class="icon-box">
+                            <img src="./assests/images/python.svg" alt="">
+                        </div>
+                        <span>Second Element</span>
+                    </li>
+                    <li>
+                        <div class="icon-box">
+                            <img src="./assests/images/python.svg" alt="">
+                        </div>
+                        <span>Third Element</span>
+                    </li>
+                    <li>
+                        <div class="icon-box">
+                            <img src="./assests/images/python.svg" alt="">
+                        </div>
+                        <span>Fourth Element</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="whatsapp"></div>
+        </div>
+    </div>
+</body>
+</html>

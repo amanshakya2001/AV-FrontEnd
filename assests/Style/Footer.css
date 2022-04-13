@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+footer{
+    background-color: #004274;
+}
+ul
+{
+    list-style: none;
+}
+.copyright{
+    background-color: #01335a;
+}
+p{
+    font-size: 13px;
+}
+.icons{
+    display: flex;
+}
+.heading{
+    font-weight: 900;
+}
+a{
+    text-decoration: none !important;
+    color: white !important;
+}

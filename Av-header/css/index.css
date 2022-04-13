@@ -1,0 +1,22 @@
+.navbar{
+    border-bottom: 3px solid black;
+}
+.nav-item{
+    margin: 0px 10px;
+}
+.btn-blue{
+    background-color: blue;
+    padding: 5px 30px !important;
+}
+.text-blue{
+    color: blue !important;
+}
+.dropdown-toggle::after{
+    content: "" !important;
+    border: 0 !important;
+}
+.dropdown-menu{
+    top: 60px !important;
+    z-index: -1 !important;
+    transition: ease-in 500ms;
+}

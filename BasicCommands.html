@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+        integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        ::-webkit-scrollbar{
+            border-radius: 10px;
+        }
+
+        .container,
+        .container-fluid {
+            /*This is a comment in css*/
+            background-color: skyblue;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 10px auto;
+            padding: 30px;
+            height: auto;
+            width: 100%;
+            outline: 3px solid yellow;
+        }
+
+        .container-fluid {
+            outline-offset: 2px;
+        }
+
+        .container-fluid h1 {
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            text-transform: capitalize;
+            letter-spacing: 10px;
+            line-height: 100px;
+            text-shadow: 2px 2px 0px black;
+            transition: all 500s;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container-fluid h1:hover {
+            text-decoration: 1px underline green;
+
+        }
+
+        .container-fluid p {
+            text-indent: 50px;
+        }
+
+        .container-fluid p span {
+            font-weight: bolder;
+            font-size: 30px;
+            font-style: italic;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .extra .aTag{
+            display: block;
+            text-align: center;
+            background-color: orange;
+            width: 10%;
+            margin: 10px auto;
+            padding: 5px 20px;
+            text-decoration: none;
+            color:white;
+            border: 1px solid transparent;
+            transition: all 100ms;
+        }
+        .extra .aTag:hover{
+            border: 1px solid orange;
+            background: transparent;
+        }
+        .extra .aButton
+        {
+            display: block;
+            text-align: center;
+            background-color: purple;
+            width: 10%;
+            margin: 10px auto;
+            padding: 5px 20px;
+            text-decoration: none;
+            color:white;
+            border: 1px solid transparent;
+            transition: all 100ms;
+        }
+        .extra .aButton:active{
+            border:1px solid purple;
+            background: transparent;
+        }
+        .extra .aButton:focus ~ .extra table {
+            display: block;
+        }
+        .extra table{
+            width: 50%;
+            margin: 30px auto;
+            display: none;
+        }
+        .extra table,td,th{
+            border: 2px solid white;
+        }
+        .extra td{
+            text-transform: capitalize;
+        }
+        
+        .extra tr:nth-child(2n){
+            background-color: darkblue;
+        }
+        .extra th{
+            text-align: center;
+            text-transform: uppercase;
+            background-color: blue;
+        }
+        .extra td,th{
+            color: white;
+            padding: 5px 10px;
+        }
+
+        .roadmap
+        {
+            margin: auto;
+        }
+        .roadmap ul{
+            border-left: 1px solid white;
+            margin-left: 10px;
+            list-style: none;
+            padding-left: 0;    
+            width: fit-content;
+            margin: auto;
+        }
+        .roadmap ul li{
+            color: orange;
+            margin-bottom: 60px;
+        }
+        .roadmap ul li i{
+            position: relative;
+        }
+        
+        .roadmap ul li i::after{
+            content: "";    
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top:  8px solid #ffffff;
+            position: absolute;
+            margin-top: 18px;
+            transform: rotate(270deg);
+            left: -4px;
+
+        }
+        .roadmap ul li p{
+            display: inline;
+            margin-left: 15px;
+        
+        }
+        .roadmap ul li .element{
+            display: inline;
+            width: 50px;
+            height: 50px;
+        }
+        .roadmap ul li .element img{
+            border-radius: 0px 10px 10px 0px;
+            transform: scale(1.5);
+        }
+        .whatsapp
+        {
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            position:fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+        .nav{
+            height: 70px;
+            width: 100%;
+            background-color: blueviolet;
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav"></div>
+    <div class="container">
+        <h1>Hello World</h1>
+    </div>
+    <div class="container-fluid">
+        <h1>Hello World</h1>
+        <p><span>Computer Science</span> dolor sit amet consectetur adipisicing elit. Aut, nemo. Itaque, modi, deleniti
+            quaerat neque tempora deserunt unde ratione, perferendis cum iure tempore autem! Voluptas, ullam quos vero
+            eveniet repellendus sunt deserunt magni asperiores, accusamus, corporis voluptates quis. Excepturi, dicta
+            culpa quod ipsa necessitatibus accusantium soluta repellendus magni reprehenderit officia voluptate! Dolorem
+            est praesentium mollitia et minus reprehenderit, explicabo totam atque ad molestias quae architecto vitae
+            quam aut. Molestias, ducimus accusantium doloremque eveniet, sequi officiis laboriosam reiciendis tenetur
+            omnis at magnam id aut eos voluptate incidunt quod ullam sed. Quidem, voluptate! Rerum vero adipisci tenetur
+            tempora quos quasi natus a.</p>
+    </div>
+    <div class="extra">
+        <i class="fas fa-heart"></i>
+        <a class="aTag" href="#">Link Tag</a>
+        <a class="aButton" href="#">Link Button</a>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>School</th>
+            </tr>
+            <tr>
+                <td>Aman Shakya</td>
+                <td>gla school</td>
+            </tr>
+            <tr>
+                <td>Aman Shakya</td>
+                <td>gla school</td>
+            </tr>
+            <tr>
+                <td>Aman Shakya</td>
+                <td>gla school</td>
+            </tr>
+            <tr>
+                <td>Aman Shakya</td>
+                <td>gla school</td>
+            </tr>
+            <tr>
+                <td>Aman Shakya</td>
+                <td>gla school</td>
+            </tr>
+            <tr>
+                <td>Aman Shakya</td>
+                <td>gla school</td>
+            </tr>
+            <tr>
+                <td>Aman Shakya</td>
+                <td>gla school</td>
+            </tr>
+            <tr>
+                <td>Aman Shakya</td>
+                <td>gla school</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- RoadMap Complete it -->
+    <div class="roadmap">
+        <ul>
+            <li class="f"><div class="element"><img src="https://c8.alamy.com/comp/M1XAWN/a-cut-out-shot-of-a-red-plastic-letter-f-M1XAWN.jpg" alt="" width="50px" height="50px"></div><i></i><p>First Element</p></li>
+            <li class="s"><img src="https://image.shutterstock.com/image-vector/letter-s-260nw-22526890.jpg" alt="" width="50px" height="50px"><i></i><p>Second Element</p></li>
+            <li class="t"><img src="https://image.shutterstock.com/image-vector/vector-illustration-uppercase-letter-t-260nw-1139240654.jpg" width="50px" height="50px" alt=""><i></i><p>Third Element</p></li>
+            <li class="fo"><img src="https://c8.alamy.com/comp/M1XAWN/a-cut-out-shot-of-a-red-plastic-letter-f-M1XAWN.jpg" alt="" width="50px" height="50px"><i></i><p>Forth Element</p></li>
+            <li class="fi"><img src="https://c8.alamy.com/comp/M1XAWN/a-cut-out-shot-of-a-red-plastic-letter-f-M1XAWN.jpg" alt="" width="50px" height="50px"><i></i><p>Fifth Element</p></li>
+        </ul>
+    </div>
+    <div class="whatsapp"></div>
+    <!-- This is a comment in html -->
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
